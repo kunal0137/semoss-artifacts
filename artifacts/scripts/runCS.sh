@@ -78,6 +78,10 @@ if [[ -z "${DEFAULT_FRAME_TYPE}" ]];
 then echo "No updated default frame" 
 else sh setDefaultFrame.sh
 fi
+if [[ -z "${DEFAULT_INSIGHT_CACHEABLE}" ]];
+then echo "No updated default insight cacheable" 
+else sh setDefaultInsightCacheable.sh
+fi
 if [[ -z "${FRAME_SIZE_LIMIT}" ]];
 then echo "No updated frame size limit" 
 else sh setFrameLimit.sh
